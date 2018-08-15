@@ -1,0 +1,137 @@
+body {
+
+   background-image: url('..\\images\\background1.jpg');
+   height:100vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   margin-left: auto;
+   margin-right: auto;
+   overflow-y: hidden;
+   overflow-x: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+
+.head {
+    font-size: 70px;
+    color: #333;
+    text-align: center;
+    margin-top: 150px;
+    color:#ffa64d;
+  }
+
+
+  @media (min-width: 815px )  {
+     #background{
+       height:350px;
+     }
+     #navlogo{
+       font-size: 70px;
+       color: #333;
+       text-align: center;
+       margin-top: 150px;
+       color:#ffa64d;
+     }
+     #logobackground{
+       height:350px;
+     }
+     #menu{
+       padding: 200px 0px;
+
+     }
+  }
+
+
+    @media (max-width: 815px){
+      #background{
+        height:350px;
+        width: 370px;
+      }
+      #navlogo{
+        font-size: 70px;
+        color: #333;
+        text-align: center;
+        margin-top: 100px;
+        color:#ffa64d;
+      }
+      #logobackground{
+        height:150px;
+        width:150px;
+      }
+      #menu{
+        padding:40px 0px;
+      }
+   }
+
+
+
+.button {
+    font-size: 50px;
+    position: absolute;
+    top: 6px;
+    right: 50px;
+    z-index: 999;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.btn-open:after {
+    font-family: "FontAwesome";
+    content:"\f0c9";
+    color: #ffa64d;
+    transition: color .2s;
+}
+
+.btn-open:hover:after {
+    color: #ffa64d;
+}
+
+
+.btn-close:after {
+    font-family: "FontAwesome";
+    content:"\f00d";
+    color:#ffa64d;
+    transition: color .2s;
+}
+
+.btn-close:hover:after {
+    color:#ffa64d;
+}
+
+.overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #002647;
+}
+
+
+#menu {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+#menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+#menu ul li a {
+    color: #ffa64d;
+    font-size: 35px;
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    transition: color .2s;
+    transform: scale(1.1);
+}
+
+#menu ul li a:hover {
+    color:#cc6600;
+}
