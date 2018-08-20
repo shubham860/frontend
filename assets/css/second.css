@@ -7,7 +7,47 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*new*/
+.sidenav {
+ height: 100%;
+ width: 0;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ left: 0;
+ background-color:#002647;
+ overflow-x: hidden;
+ transition: 0.5s;
+ padding-top: 60px;
+ text-align:center;
+}
 
+.sidenav a {
+ text-decoration: none;
+
+}
+
+.sidenav a:hover{
+ color: #cc6600;
+}
+
+.sidenav .closebtn {
+ position: absolute;
+ top: 0;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 50px;
+ color:#ffa64d;
+ font-size:80px;
+ margin-top: -30px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+/*end*/
 @media (min-width: 815px )  {
    #background{
      height:350px;
@@ -16,29 +56,36 @@ body{
      font-size: 70px;
      color: #333;
      text-align: center;
-     margin-top: 150px;
+     margin-top: 140px;
      color:#ffa64d;
    }
    #logobackground{
-     height:350px;
+     height:300px;
    }
    #menu{
-     padding: 200px 0px;
+     padding: 130px 0px;
 
+   }
+   #navbtn{
+     font-size:50px;
+     cursor:pointer;
+    margin-top: 30px;
+     margin-left:30px;
+     color:#ffa64d;
    }
 }
 
 
   @media (max-width: 815px){
     #background{
-      height:350px;
-      width: 370px;
+      height:300px;
+      width: 320px;
     }
     #navlogo{
       font-size: 70px;
       color: #333;
       text-align: center;
-      margin-top: 100px;
+      margin-top: 50px;
       color:#ffa64d;
     }
     #logobackground{
@@ -48,54 +95,19 @@ body{
     #menu{
       padding:40px 0px;
     }
-
+    #navbtn{
+      font-size:50px;
+      cursor:pointer;
+      margin-top:30px;
+      margin-left:30px;
+      color:#ffa64d;
+    }
+    .heading{
+      margin-top:-70px;
+    }
  }
 
 
-
-.button {
-  font-size: 50px;
-  position: absolute;
-  top: 6px;
-  right: 50px;
-  z-index: 999;
-}
-
-.button a {
-  text-decoration: none;
-}
-
-.btn-open:after {
-  font-family: "FontAwesome";
-  content:"\f0c9";
-  color: #ffa64d;
-  transition: color .2s;
-}
-
-.btn-open:hover:after {
-  color:#ff8000;
-}
-
-
-.btn-close:after {
-  font-family: "FontAwesome";
-  content:"\f00d";
-  color:#ffa64d;
-  transition: color .2s;
-}
-
-.btn-close:hover:after {
-  color:#ff8000;
-}
-
-.overlay {
-  opacity: 0;
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: #002647;
-}
 
 
 #menu {
@@ -120,7 +132,7 @@ body{
 }
 
 #menu ul li a:hover {
-  color:#ff8000;
+  color:#cc6600;
 }
 
 
@@ -147,7 +159,7 @@ body{
     #decrease{
       margin-top:60px;
       font-size: 100px;
-      margin-left: 80px;
+      margin-left: 40px;
     }
   }
 
@@ -167,9 +179,9 @@ body{
         border-bottom: 2px solid #ffa64d;
       }
       #decrease{
-        margin-top:60px;
+        margin-top:-10px;
         font-size: 65px;
-        margin-left: 20px;
+        margin-left: 10px;
       }
     }
 
@@ -402,40 +414,16 @@ body{
 
 
 /*owl corousel*/
-.carousel-wrap {
-  margin: 90px auto;
-  padding: 0 5%;
-  width: 80%;
-  position: relative;
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-/* fix blank or flashing items on carousel */
-.owl-carousel .item {
-  position: relative;
-  z-index: 100;
-  -webkit-backface-visibility: hidden;
-}
-
-/* end fix */
-.owl-nav > div {
-  margin-top: -26px;
-  position: absolute;
-  top: 50%;
-  color: #cdcbcd;
-}
-
-.owl-nav i {
-  font-size: 52px;
-}
-
-.owl-nav .owl-prev {
-  left: -30px;
-}
-
-.owl-nav .owl-next {
-  right: -30px;
-}
-
+/*end*/
 #fname,#Email {
     width: 100%;
     padding: 15px;
@@ -445,6 +433,7 @@ body{
     outline: none;
     background-color: #003666;
     -webkit-box-shadow: inset 0 0 0px 9999px  #003666;
+    color:  #ffa64d;
 }
 
 #textarea{
@@ -456,6 +445,7 @@ body{
   outline: none;
   background-color: #003666;
   -webkit-box-shadow: inset 0 0 0px 9999px  #003666;
+  color:  #ffa64d;
 
 }
 

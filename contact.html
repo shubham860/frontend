@@ -26,35 +26,36 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="heading">
-        <h1 class="display-1" id="decrease"><b>Contact <span style="color:#ffa64d;">Us</span></b></h1>
+        <h1  id="navbtn" onclick="openNav()"><span class="glyphicon glyphicon-menu-hamburger"></span></h1>
+        <div class="heading"  style="margin-top:10px;">
+        <h1 class="display-1" id="decrease" style="margin-left:20px;"><b>Contact <span style="color:#ffa64d;">Us</span></b></h1>
       </div>
     </div>
    <br />
    <br />
     <div class="row">
       <div class="col-md-6">
-        <div class="jumbotron" style="background-color:#003666; border:2px solid  #ffa64d;">
-           <table class="table" cellspacing="-5" data-aos="zoom-in-left">
-             <tbody>
-               <tr >
-                  <td id="tr"><input type="text" id="fname" name="firstname" placeholder="Your name.."></td>
-               </tr>
-               <tr>
-                  <td id="tr"><input type="Email" id="Email" name="Email" placeholder="Your Email.."></td>
-               </tr>
-              <tr>
-                  <td id="tr"><input type="textarea" id="textarea" name="Message" placeholder="Message"></td>
-            </tr>
-            <tr>
-            <td id="tr"> <input type="submit" id="submit" value="Submit"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+
       </div>
    <div class="col-md-6">
-
+     <div class="jumbotron" style="background-color:#003666; border:2px solid  #ffa64d;">
+        <table class="table" cellspacing="-5" data-aos="zoom-in-left">
+          <tbody>
+            <tr >
+               <td id="tr"><input type="text" id="fname" name="firstname" placeholder="Your name.."></td>
+            </tr>
+            <tr>
+               <td id="tr"><input type="Email" id="Email" name="Email" placeholder="Your Email.."></td>
+            </tr>
+           <tr>
+               <td id="tr"><input type="textarea" id="textarea" name="Message" placeholder="Message"></td>
+         </tr>
+         <tr>
+         <td id="tr"> <input type="submit" id="submit" value="Submit"></td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
    </div>
 
 
@@ -62,42 +63,42 @@
 </div>
 
 
-    <!-- Menu Button -->
-    <div class="button">
-        <a href="#" id="btn-menu" class="btn-open"></a>
-    </div>
 
-    <!-- Overlay -->
-    <div class="overlay">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6" id="navlogo">
-                  <img src="assets/images/logo.png" id="logobackground" class="img-fluid pull-xs-left" alt="logo">
-            </div>
+<!--   Navigation-->
+<div id="mySidenav" class="sidenav" style="overflow-y: hidden;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="container-fluid">
+       <div class="row">
+         <div class="col-md-6" id="navlogo">
+               <img src="assets/images/logo.png" id="logobackground" class="img-fluid pull-xs-left" alt="logo">
+         </div>
 
-            <div class="col-md-6" id="menu" data-aos="zoom-in-left">
-              <div class="container-fluid">
-             <ul>
-                 <li> <a href="index.html">HOME</a> </li>
-                 <li> <a href="services.html">SERVICES</a> </li>
-                 <li> <a href="about.html">ABOUT </a> </li>
-                 <li> <a href="contact.html">CONTACT</a> </li>
-             </ul>
-              </div>
-            </div>
+         <div class="col-md-6" id="menu">
+           <div class="container-fluid">
+          <ul>
+              <li> <a href="index.html">HOME</a> </li>
+              <li> <a href="services.html">SERVICES</a> </li>
+              <li> <a href="about.html">ABOUT US</a></li>
+              <li> <a href="contact.html">CONTACT</a> </li>
+          </ul>
+           </div>
+         </div>
 
-          </div>
-        </div>
-    </div>
+       </div>
+     </div>
+
+  </div>
+
 
 
         <!--main js file-->
         <script type="text/javascript" src="assets/js/script.js"></script>
+          <script type="text/javascript" src="assets/js/aos.js"></script>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>    <!-- Icons -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         <!--icons-->
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
         <!--bootstrap jquery-->

@@ -18,6 +18,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/second.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.css">
+      <link rel="stylesheet" type="text/css" href="OwlCarousel2-2.3.4\dist\assets\owl.carousel.css">
+      <link rel="stylesheet" type="text/css" href="OwlCarousel2-2.3.4\dist\assets\owl.theme.default.min.css">
     <!--font-->
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
   </head>
@@ -26,9 +29,36 @@
   <body>
 
 
+    <!--   Navigation-->
+    <div id="mySidenav" class="sidenav" style="overflow-y: hidden;">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="container-fluid">
+           <div class="row">
+             <div class="col-md-6" id="navlogo">
+                   <img src="assets/images/logo.png" id="logobackground" class="img-fluid pull-xs-left" alt="logo">
+             </div>
+
+             <div class="col-md-6" id="menu">
+               <div class="container-fluid">
+              <ul>
+                  <li> <a href="index.html">HOME</a> </li>
+                  <li> <a href="services.html">SERVICES</a> </li>
+                  <li> <a href="about.html">ABOUT US</a></li>
+                  <li> <a href="contact.html">CONTACT</a> </li>
+              </ul>
+               </div>
+             </div>
+
+           </div>
+         </div>
+
+      </div>
+
+
 
     <div class="container-fluid">
       <div class="row">
+        <h1  id="navbtn" onclick="openNav()"><span class="glyphicon glyphicon-menu-hamburger"></span></h1>
         <div class="heading">
         <h1 class="display-1" id="head"><b>SERV<span style="color:#ffa64d;">ICES</span></b></h1>
       </div>
@@ -70,71 +100,80 @@
   </div>
   </div>
 
-<!--  <div class="row">
-    <div class="container-fluid">
-      <div class="carousel-wrap">
-            <div class="owl-carousel">
-               <div class="item"><img src="http://placehold.it/150x150"></div>
-               <div class="item"><img src="http://placehold.it/150x150"></div>
-               <div class="item"><img src="http://placehold.it/150x150"></div>
-               <div class="item"><img src="http://placehold.it/150x150"></div>
-               <div class="item"><img src="http://placehold.it/150x150"></div>
-               <div class="item"><img src="http://placehold.it/150x150"></div>
-               <div class="item"><img src="http://placehold.it/150x150"></div>
-               <div class="item"><img src="http://placehold.it/150x150"></div>
-               <div class="item"><img src="http://placehold.it/150x150"></div>
-               <div class="item"><img src="http://placehold.it/150x150"></div>
-               <div class="item"><img src="http://placehold.it/150x150"></div>
-                <div class="item"><img src="http://placehold.it/150x150"></div>
-            </div>
-        </div>
-    </div>
-  </div>-->
-
-
-</div>
 </div>
 
 
+  <div class="row" style="background-color:#f3f8fa;">
+  <div class="col-md-4">
+    <h2 id="tech" style="color: #003666;margin-top:30px;">Our Technologies :</h1>
+  </div>
+  <div class="col-md-8">
+  <h2  id="nology" style="color: #003666;">We have every tool to meet your requirements</h2>
+  </div>
+</div>
+</div>
+<br />
 
-
-
-
-    <!-- Menu Button -->
-    <div class="button">
-        <a href="#" id="btn-menu" class="btn-open"></a>
+<div class="row" style="background-color:#f3f8fa">
+  <div class="container-fluid text-center mt-5">
+    <div class="owl-carousel owl-theme" style="background-color:#f3f8fa;">
+        <div class="item"> <img src="assets/images/scikitlearn.png"  id="learn"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/python.png" id="python" class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/jupyter.png"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/js.png"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/bootstrap.png"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/jquery.png"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/angular.png"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/nodejs.png"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/react.png"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/sass.png" id="sass"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/django.png" id="django"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/c.png"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/andriod.png" id="andriod"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/github.png" id="github"  class="fluid" alt="logo"></div>
+        <div class="item"><img src="assets/images/java.png" id="python" class="fluid" alt="logo"></div>
     </div>
+  </div>
+</div>
 
-    <!-- Overlay -->
-    <div class="overlay">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-6" id="navlogo">
-                  <img src="assets/images/logo.png" id="logobackground" class="img-fluid pull-xs-left" alt="logo">
-            </div>
 
-            <div class="col-md-6" id="menu" data-aos="zoom-in-left">
-              <div class="container-fluid">
-             <ul>
-                 <li> <a href="index.html">HOME</a> </li>
-                 <li> <a href="services.html">SERVICES</a> </li>
-                 <li> <a href="about.html">ABOUT </a> </li>
-                 <li> <a href="contact.html">CONTACT</a> </li>
-             </ul>
-              </div>
-            </div>
+</div>
 
-          </div>
-        </div>
-    </div>
+
+
 
 
 
 
 
     <!--main js file-->
-    <script type="text/javascript" src="assets/js/typed.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <!--owl carousel file-->
+    <script type="text/javascript" src="OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js"></script>
+    <script type="text/javascript" src="OwlCarousel2-2.3.4\dist\owl.carousel.js"></script>
+    <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+       loop:true,
+        margin:10,
+        nav:true,
+        autoplay:1000,
+        responsive:{
+          500: {
+         items: 3
+         },
+         600: {
+         items: 4
+         },
+         900: {
+         items: 5
+         },
+         1100: {
+         items: 6
+         }
+      }
+  })
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,0 +1,86 @@
+@media (min-width: 815px )  {
+.text-center{
+  text-align: center!important;
+}
+
+.mt-5{
+  margin-top: 3rem!important;
+}
+
+
+.img-fluid{
+  width:100px;
+  padding-right:15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.item{
+    width: 221.888px;
+    margin-right: 2px;
+}
+
+#python{
+  height: 200px;
+  width: 200px;
+}
+#learn{
+  margin-top:55px;
+}
+#github{
+  margin-top:20px;
+}
+#andriod{
+margin-top:20px;
+}
+#sass{
+  margin-top:45px;
+}
+
+#django{
+  margin-top:55px;
+}
+#tech{
+  color: #cc6600;
+  font-size:50px;
+  text-align:center;
+}
+#nology{
+   color:#003666;
+   font-size:55px;
+}
+
+
+}
+
+@media (max-width: 815px ){
+  #learn{
+    margin-top:35px;
+  }
+  #github{
+    margin-top:20px;
+  }
+  #andriod{
+  margin-top:10px;
+  }
+  #sass{
+    margin-top:25px;
+  }
+
+  #django{
+    margin-top:35px;
+  }
+  #tech{
+    color: #cc6600;
+    font-size:30px;
+    text-align:center;
+  }
+  #nology{
+     color:#003666;
+     font-size:35px;
+     text-align:center;
+  }
+
+
+}
