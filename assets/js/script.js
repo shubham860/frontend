@@ -9,23 +9,18 @@ function closeNav() {
 
 
 /*typewriter*/
-$(function(){
-	$(".typed").typed({
-		strings: ["Developers.", "Designers.", "People."],
-		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-		stringsElement: null,
-		// typing speed
-		typeSpeed: 30,
-		// time before typing starts
-		startDelay: 1200,
-		// backspacing speed
+var type = new Typed("#typed",{
+    stringsElement: "#typed-strings",
+    startDelay : 1200,
+    typeSpeed : 300,
+  // backspacing speed
 		backSpeed: 20,
 		// time before backspacing
 		backDelay: 500,
 		// loop
 		loop: true,
 		// false = infinite
-		loopCount: 5,
+		loopCount: 10,
 		// show cursor
 		showCursor: false,
 		// character for cursor
@@ -42,5 +37,4 @@ $(function(){
 		onStringTyped: function() {},
 		// callback for reset
 		resetCallback: function() {}
-	});
 });
