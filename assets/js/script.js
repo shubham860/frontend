@@ -40,13 +40,14 @@ var type = new Typed("#typed",{
 });
 
 
+
 var myVar;
 
 function myFunction() {
-    myVar = setTimeout(showPage,6000);
+    myVar = setTimeout(showPage,500);
 }
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
-  document.getElementById("background").style.display = "block";
+  document.getElementById("page").style.display = "block";
 }

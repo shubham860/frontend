@@ -7,6 +7,14 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.head {
+    font-size: 70px;
+    color: #333;
+    text-align: center;
+    margin-top: 150px;
+    color:#ffa64d;
+  }
+
 /*new*/
 .sidenav {
  height: 100%;
