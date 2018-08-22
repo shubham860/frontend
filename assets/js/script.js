@@ -38,3 +38,15 @@ var type = new Typed("#typed",{
 		// callback for reset
 		resetCallback: function() {}
 });
+
+
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage,6000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("background").style.display = "block";
+}
