@@ -7,7 +7,6 @@ function closeNav() {
 }
 
 
-
 /*typewriter*/
 var type = new Typed("#typed",{
     stringsElement: "#typed-strings",
@@ -50,4 +49,24 @@ function myFunction() {
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("page").style.display = "block";
+}
+
+
+
+function erase()
+{
+  var name = document.getElementById('fname').value;
+  var email = document.getElementById('Email').value;
+  var messege = document.getElementById('textarea').value;
+  if(name == "" || email == "" || messege == "")
+  {
+    alert("Error : Please enter all fields")
+  }
+  else{
+  document.getElementById('fname').value="";
+  document.getElementById('Email').value="";
+  document.getElementById('textarea').value="";
+  alert("Thanks for contacting us. We will get back to you soon, and for more update ping us on facebook");
+   }
+
 }
