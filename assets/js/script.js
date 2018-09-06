@@ -66,7 +66,7 @@ function erase()
   document.getElementById('fname').value="";
   document.getElementById('Email').value="";
   document.getElementById('textarea').value="";
-  alert("Thanks for contacting us. We will get back to you soon, and for more update ping us on facebook");
+  alert("Thanks for contacting us, We will get back to you soon,and for more updates ping us on facebook");
    }
 
 }
